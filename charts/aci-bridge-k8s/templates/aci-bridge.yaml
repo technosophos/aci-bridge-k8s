@@ -6,16 +6,16 @@ metadata:
 spec:
   containers:
   - name: aci-bridge
-    image: azure/aci-bridge-k8s:latest
+    image: {{ .Values.image }}
     imagePullPolicy: Always
     env:
       - name: AZURE_CLIENT_ID
-        value: <required>
+        value: {{ .Values.azure.clientID }}
       - name: AZURE_CLIENT_KEY
-        value: <required>
+        value: {{ .Values.azure.clientKey }}
       - name: AZURE_TENANT_ID
-        value: <required>
+        value: {{ .Values.azure.tenantID }}
       - name: AZURE_SUBSCRIPTION_ID
-        value: <required>
+        value: {{ .Values.azure.subscriptionID }}
       - name: ACI_RESOURCE_GROUP
-        value: <required>
+        value: {{ .Values.azure.resourceGroup }}

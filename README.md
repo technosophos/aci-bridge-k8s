@@ -102,6 +102,13 @@ k8s-agentpool1-31868821-2   Ready                      5d        v1.7.0
 k8s-master-31868821-0       Ready,SchedulingDisabled   5d        v1.7.0
 ```
 
+Helm users can instead run:
+```
+$ helm inspect values ./charts/aci-bridge-k8s > myvalues.yaml
+$ # edit myvalues.yaml
+$ helm install ./charts/aci-bridge-k8s -f myvalues.yaml`)
+```
+
 ### Install the NGINX example
 
 ```console

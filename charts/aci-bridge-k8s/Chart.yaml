@@ -1,0 +1,4 @@
+apiVersion: v1
+description: ACI Bridge for Kubernetes
+name: aci-bridge-k8s
+version: 0.1.0

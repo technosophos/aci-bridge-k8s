@@ -1,0 +1,14 @@
+image: "azure/aci-bridge-k8s:latest"
+azure:
+  # Client ID and Key are the Service Principal ID and key
+  # from:
+  #  az ad sp create-for-rbac --role=Contributor --scopes /subscriptions/<subscription-id>
+  # as appID and password
+  clientID: ""
+  clientKey: ""
+  # Tenant ID can be found with `az account show`
+  tenantID: ""
+  # This is the subscription in which you are running Kubernetes/ACS
+  subscriptionID: ""
+  # The resource group in which you are running Kubernetes
+  resourceGroup: ""

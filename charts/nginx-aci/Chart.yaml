@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Example nginx-on-ACI
+name: nginx-aci
+version: 0.1.0
